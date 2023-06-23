@@ -1,0 +1,122 @@
+.Header{
+  width: 100%;
+  height: 8vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.leftContainer{
+  margin-left: 5%;
+  display: flex;  
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftContainer a{
+  font-size:1.3rem;
+  text-decoration: none;
+  color: black;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s all;
+}
+
+.leftContainer .darkMode{
+  border: none;
+  background-color:transparent;
+  font-size: 26px;
+  height: 26px;
+  cursor: pointer;
+  transition: 0.3s all;
+  position: relative;
+}
+
+.leftContainer .darkMode ion-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.leftContainer a:hover{
+  color: white!important;
+  background-color: #181818;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+
+.rightContainer{
+  margin-right: 10%;  
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.rightContainer a{
+  font-size:1.3rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.portfolioOptions{
+  position: relative;
+  height: 100%;
+  
+}
+
+.hiddenContainer{
+  position: absolute;
+  background-color: #181818;
+  bottom: -190px;
+  left: -40px;
+  width: 150px;
+  padding: 0 15px;
+  height: 150px;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 10px #181818);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  transition: all .2s;
+  opacity: 0;
+}
+
+.hideOpt{
+  opacity: 0;
+}
+
+.aContainer{
+  position: relative;
+  margin-right: 100px;
+}
+
+.aContainer a{
+  position: absolute;
+}
+
+#hiddenPortfolio{
+  display: none;
+  width: 90px;  
+  align-items: center;
+  justify-content: center;
+}
+
+#hiddenPortfolio ion-icon{
+  transform: rotate(180deg)
+}

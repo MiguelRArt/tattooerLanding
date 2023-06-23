@@ -1,0 +1,85 @@
+.hero{
+  background-color: black;
+  max-width: 100%;  
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .leftHero{
+  width: 50%;
+  height: 100%;
+  background-color: white;  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+
+.hero .leftHero .titleLeftHero{
+  margin-left: 10%;  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 10%;  
+}
+
+.hero .leftHero .contactLeftHero{
+  position: absolute;
+  left: 5%;
+  bottom: 10%;  
+}
+
+.hero .leftHero .titleLeftHero h1{
+  font-size: 5em;
+  font-weight: 100;
+}
+
+.hero .rightHero{
+  width:60%;
+  height: 100%;  
+  right: 0;  
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px black;
+}
+
+.hero .rightHero .imgContainer {
+  width: 100%;
+  height: 100%;
+  background: url('../imgs/heroImg.jpg'), lightgray 50% / cover no-repeat; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  transition: all .2s ease-in-out;    
+}
+
+.rightHero:hover .imgContainer,
+.rightHero:focus .imgContainer {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+
+}
+
+#movable-element{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  background-color: black;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.darkMode-hero{
+  background-color: rgb(5, 5, 5)!important; 
+  color: white;
+}
+
+.darkMode-hero h3{
+  font-weight: 100;
+  
+}
